@@ -1,0 +1,10 @@
+<aside class="col-sm-4" ng-include="'/views/subviews/mainmenu.html'"></aside>
+
+<section class="col-sm-8" ng-controller="home.controller as home">		
+	<h1 class="current">Latest loaned <small>books</small></h1>
+	<nav class="books" ng-repeat="book in books | orderBy:title:false ">
+		
+		<div book-item book="book"></div>
+		
+	</nav>
+</section>

@@ -1,0 +1,10 @@
+{
+  "name": "bookshelf-api",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "cors": "^2.4.2",
+    "express": "latest",
+    "mongoose": "latest"
+  }
+}

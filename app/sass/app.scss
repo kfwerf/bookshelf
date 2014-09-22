@@ -1,0 +1,50 @@
+@import 'bootstrap/bootstrap';
+
+.bookshelf {
+
+	.login {
+		border: 1px solid #ccc;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		width: 75%;
+		margin: 0px auto;
+		left: 50%;
+	}
+	
+	.browse {
+		a {
+			display: block;
+		}
+	}
+
+	.book {
+		
+		border-top: 1px solid #efefef;
+		border-bottom: 1px solid #efefef;
+		padding: 20px 0px;
+
+		.btn {
+			margin: 10px 0px;
+		}
+
+		.coverart {
+
+			height: 125px;
+			margin-bottom: 10px;
+
+			.img {
+				height: 100%;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+
+		.alert {
+			margin: 20px 0px;
+		}
+	}
+
+}

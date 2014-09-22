@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bookshelf, Your digital library</title>
+	
+	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/alertify.core.css">
+	<link rel="stylesheet" href="/css/alertify.bootstrap.css">
+</head>
+<body>
+
+	<div class="bookshelf container-fluid" ng-app="bookshelfApp">
+		
+		<div class="login" ng-show="boolLogin">
+			<h1 class="current">Login to <small>bookshelf</small></h1>
+			<form role="form">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-default" ng-click="boolLogin = false">Submit</button>
+			</form>
+		</div>
+
+		<div class="app ng-hide" ng-hide="boolLogin">
+			<div class="row">
+				<div class="col-sm-6">
+					<h1>Bookshelf <small>Your digital library</small></h1>
+				</div>
+				<div class="col-sm-6 text-right ng-hide">
+					<button class="login btn btn-primary">Login</button>
+					<button class="register btn">Register</button>
+				</div>
+				<div class="col-sm-6 text-right">
+					<h3 class="userinfo">Logged in as: <strong>John Doe</strong>  <button class="btn btn-primary">Logout</button></h3>
+					<p>Books loaned: <span class="badge">{{objLoanedBooks.length}}</span></p>
+					<p>Books reserved: <span class="badge">{{objReservedBooks.length}}</span></p>
+				</div>
+			</div>
+			<nav class="mainmenu"></nav>
+
+			<div class="content row" ui-view="" role="main"></div>	
+		</div>
+
+	</div>
+	<script src="/js/components/alertify/alertify.js"></script>
+
+	<script src="/js/components/angular/angular.js"></script>
+	<script src="/js/components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="/js/components/angular-ui-utils/ui-utils.js"></script>
+
+	<script src="/js/app/app.js"></script>
+	<script src="/js/app/routes.js"></script>
+	<script src="/js/app/init.js"></script>
+
+	<script src="/js/app/directives/book.js"></script>
+	
+	<script src="/js/app/controllers/home.js"></script>
+	<script src="/js/app/controllers/category.js"></script>
+	<script src="/js/app/controllers/book.js"></script>
+
+</body>
+</html>

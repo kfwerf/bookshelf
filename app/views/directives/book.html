@@ -1,0 +1,21 @@
+<div class="book clearfix">
+	
+	<div class="coverart col-sm-4">
+		<figure class="img" ng-style="{ 'background-image': 'url(' + getBackgroundUrl() + ')' }"></figure>
+	</div>
+	<div class="info col-sm-4">
+		<p class="title"><strong>Title: </strong>{{book.title}}</p>
+		<p class="author"><strong>Author: </strong>{{book.author}}</p>
+		<p class="isbn"><strong>ISBN: </strong>{{book.isbn}}</p>
+	</div>
+	<div class="status col-sm-4">
+		<p ng-show="book.loaned" class="ng-hide"><strong>Status: </strong><span class="label label-warning">Loaned</span></p>
+		<p class="loanee ng-hide" ng-show="book.loaned"><strong>Loaned by: </strong>{{book.loanedto}}</p>
+		<p class="untill ng-hide" ng-show="book.loaned"><strong>Returns on: </strong>{{book.until}}</p>
+		
+		<button class="moreinfo btn btn-info" ng-click="getMoreInfo(book.isbn)">More info</button>
+		<button class="reserve btn btn-primary ng-hide" ng-show="book.loaned" ng-click="doReserveBook(book.isbn)" ng-disabled="boolReserveDisabled">Reserve this book</button>
+		<button class="loan btn btn-success" ng-hide="book.loaned" ng-click="doLoanBook(book.isbn)" ng-disabled="book.loaned || boolLoanDisabled">Loan this book</button>
+	</div>
+	<div class="alert alert-warning col-sm-12" role="alert" ng-show="book.loaned">This book is currently loaned out untill {{book.until}}</div>
+</div>

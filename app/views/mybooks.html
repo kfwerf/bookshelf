@@ -1,0 +1,14 @@
+<aside class="col-sm-4" ng-include="'/views/subviews/mainmenu.html'"></aside>
+
+<section class="col-sm-8">		
+	<h1 class="current">My loaned <small>books</small></h1>
+	<p ng-hide="objLoanedBooks.length">No loaned books.</p>
+	<nav class="books" ng-repeat="loanedbook in objLoanedBooks | orderBy:title:false ">
+		<div book-item book="loanedbook"></div>
+	</nav>
+	<h1 class="current">My reserved <small>books</small></h1>
+	<p ng-hide="objReservedBooks.length">No reserved books.</p>
+	<nav class="books" ng-repeat="reservedbook in objReservedBooks | orderBy:title:false ">
+		<div book-item book="reservedbook"></div>
+	</nav>
+</section>

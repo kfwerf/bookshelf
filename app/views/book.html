@@ -1,0 +1,10 @@
+<aside class="col-sm-4" ng-include="'/views/subviews/mainmenu.html'"></aside>
+<section class="col-sm-8" ng-controller="book.controller as book">		
+	<h1 class="current">{{book.title}} <small>book</small></h1>
+	
+	<div book-item book="book"></div>
+
+	<div class="description" ng-bind="book.description">
+		
+	</div>
+</section>

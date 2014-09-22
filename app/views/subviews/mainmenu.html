@@ -1,0 +1,14 @@
+<div class="search">
+	<form action="" class="search-form clearfix">
+		<div class="col-xs-8">
+			<input type="text" class="search form-control col-sm-8" placeholder="Type your keywords">
+		</div>
+		<button class="search btn btn-success col-xs-4">Search</button>
+	</form>
+</div>
+<menu class="filters"></menu>
+<menu class="browse">
+	<a ng-href="/home/">Home</a>
+	<a ng-href="/category/{{category.endpoint}}" ng-repeat="category in categories | orderBy: title:true">{{category.title}}</a>
+	<a ng-href="/my-books/">My loaned / reserved books</a>
+</menu>

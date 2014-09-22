@@ -1,0 +1,52 @@
+[
+	{
+		"loanedto": "John Doe",
+		"until": "20-10-2014",
+		"author": "John Green",
+		"title": "The Fault in Our Stars ",
+		"description": "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten. Insightful, bold, irreverent, and raw, The Fault in Our Stars is award-winning author John Green’s most ambitious and heartbreaking work yet, brilliantly exploring the funny, thrilling, and tragic business of being alive and in love.",
+		"isbn": "0141345659",
+		"coverart": "9200000004735901.jpg",
+		"loaned": false
+	},
+	{
+		"loanedto": "Jane Doe",
+		"until": "21-11-2014",
+		"author": "John Green",
+		"title": "Looking for Alaska",
+		"description": "The unmissable first novel from bestselling and award-winning author of The Fault In Our Stars.If people were rain, I was drizzle and she was a hurricane.Miles Halter’s whole life has been one big non-event, until he meets Alaska Young.Gorgeous, clever and undoubtedly screwed-up, Alaska draws Miles into her reckless world and irrevocably steals his heart. For Miles, nothing can ever be the same again.‘Looking for Alaska’ brilliantly captures the exquisite painful joy of living and loving. Poignant, funny, heartbreaking and compelling, this novel will stay with you forever.",
+		"isbn": "0007523165",
+		"coverart": "9200000010945963.jpg",
+		"loaned": true
+	},
+	{
+		"loanedto": "Jim Doe",
+		"until": "19-11-2014",
+		"author": "Nathan Filer",
+		"title": "The Shock of the Fall",
+		"description": "I’ll tell you what happened because it will be a good way to introduce my brother. His name’s Simon. I think you’re going to like him. I really do. But in a couple of pages he’ll be dead. And he was never the same after that.'The Shock of the Fall is an extraordinary portrait of one man’s descent into mental illness. It is a brave and groundbreaking novel from one of the most exciting new voices in fiction.",
+		"isbn": "000749145X",
+		"coverart": "9200000019583060.jpg",
+		"loaned": false
+	},
+	{
+		"loanedto": "Chris Doe",
+		"until": "15-11-2014",
+		"author": "Jamie Oliver",
+		"title": "Jamie's Comfort Food",
+		"isbn": "0718159535",
+		"coverart": "9200000008577875.jpg",
+		"loaned": false
+	},
+	{
+		"loanedto": "Anna Doe",
+		"until": "14-11-2014",
+		"author": "Alfie Deyes",
+		"title": "The Pointless Book",
+		"description": "Brought to you by YouTube Vlogger Alfie Deyes, The Pointless Book, accompanied by the free downloadable app, is the ultimate addition to his YouTube channel a weird & funny video-diary of fun, challenges and nothingness: bake a cake in a mug; take part in a people-watching challenge; create a time capsule; diarise a week of your life and learn to make origami. Fully illustrated and packed with a host of games, activities and pranks, Alfie invites you to join his online following as he challenges you to complete your journal of pointlessness and do virtually nothing with pride.",
+		"isbn": "1905825900",
+		"coverart": "9200000027847255.jpg",
+		"loaned": false
+	}
+
+]
